@@ -19,3 +19,24 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
+
+
+$("#button-about").click(function() {
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("#scroll-about").offset().top
+  }, 2000);
+});
+
+$("#button-works").click(function() {
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("#scroll-works").offset().top
+  }, 2000);
+});
+
+$("#button-education").click(function() {
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("#scroll-education").offset().top
+  }, 2000);
+});
+
+

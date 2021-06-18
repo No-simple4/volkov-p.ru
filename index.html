@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Benne&family=Roboto:ital,wght@0,300;0,500;0,700;1,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -34,9 +36,10 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="index.html">Главная</a></li>
-                                            <li><a href="works.html">Портфолио</a></li>
-                                            <li><a href="about.html">О себе</a></li>
-                                            <li><a href="https://github.com/No-simple4">GitHub</a></li>
+                                            <li><a href="#" id="button-works">Портфолио</a></li>
+                                            <li><a href="#" id="button-about">О себе</a></li>
+                                            <li><a href="#" id="button-education">Образование</a></li>
+                                            <li><a href="https://github.com/No-simple4" target="_blank">GitHub</a></li>
 
                                         </ul>
                                     </nav>
@@ -66,10 +69,10 @@
             <div class="container" ">
                 <div class="row align-items-center position-relative">
                     <div class="col-lg-9">
-                        <div class="slider_text" data-aos="zoom-in-up">
+                        <div class="slider_text">
                             <h3>Привет, я Александр <br>
                                 <span>Начинающий HTML верстальщик</span></h3>
-                            <a class="boxed-btn3-line" href="works.html">Мои работы</a>
+
                         </div>
                     </div>
                     <div class="my_img d-none d-lg-block">
@@ -81,8 +84,8 @@
     </div>
 
     <!-- slider_area_end -->
-    <div class="download_area">
-        <div class="container" data-aos="fade-down-left">
+    <div class="download_area" id="scroll-about">
+        <div class="container" >
             <div class="row">
                 <div class="col-xl-10">
                     <div class="download_text">
@@ -119,7 +122,7 @@
                             Иностранные языки:</br>
                             Английский язык —Уровень А1. Breakthrough or beginner
                         </div>
-                        <a href="https://disk.yandex.ru/d/vX4_rX8YblzBdA" target="_blank" class="boxed-btn3-line">Загрузить резюме</a>
+                        <a  download href="dowload/Волков%20Александр%20Владиславович.doc" class="boxed-btn3-line">Скачать резюме</a>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1 col-md-6">
@@ -160,7 +163,7 @@
     </div>
 
     <!-- service_area start  -->
-    <div class="service_area">
+    <div class="service_area" id="scroll-education">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -184,7 +187,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_service text-center">
                         <div class="icon">
-                            <img src="img/svg_icon/2.svg" alt="">
+                            <img src="img/svg_icon/1.svg" alt="">
                         </div>
                         <h3>
                             2016-2020
@@ -195,7 +198,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_service text-center">
                         <div class="icon">
-                            <img src="img/svg_icon/3.svg" alt="">
+                            <img src="img/svg_icon/1.svg" alt="">
                         </div>
                         <h3>
                             2020-2021
@@ -214,7 +217,7 @@
             <div class="row ">
                 <div class="col-xl-12 ">
                     <div class="section_title mb-50 ">
-                        <h3 class="text-center">Мои работы</h3>
+                        <h3 class="text-center" id="scroll-works">Мои работы</h3>
                     </div>
                 </div>
             </div>
@@ -222,7 +225,7 @@
                 <div class="col-xl-10 col-lg-10 ">
                     <div class="row ">
                         <div class="col-xl-6 col-lg-6 col-md-6 ">
-                            <div class="single_gallery" data-aos="fade-down-left">
+                            <div class="single_gallery" >
                                 <div class="thumb ">
                                     <img src="img/gallery/work1.png " alt=" ">
                                 </div>
@@ -233,7 +236,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="single_gallery" data-aos="zoom-out-down>">
+                            <div class="single_gallery" >
                                 <div class="thumb ">
                                     <img src="img/gallery/work2.png " alt=" ">
                                 </div>
@@ -246,7 +249,7 @@
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 ">
-                            <div class="single_gallery" data-aos="zoom-out-right">
+                            <div class="single_gallery" >
                                 <div class="thumb ">
                                     <img src="img/gallery/work3.png " alt=" ">
                                 </div>
@@ -257,7 +260,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="single_gallery" data-aos="zoom-out-left">
+                            <div class="single_gallery" >
                                 <div class="thumb ">
                                     <img src="img/gallery/work4.png" alt=" ">
                                 </div>
@@ -276,116 +279,19 @@
 
 
         </div>
-        <!--contact-->
-        <div class="service_contacts text-margin ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="section_title-contacts mb-100 ">
-                            <h3 class="text-center color_black">Контакты</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-lg-4 col-md-6 ">
-                        <div class=" text-center ">
-                            <div class="icon ">
-                                <a href="https://app.slack.com/client/T09768VE3 ">
-                                    <img src="img/svg_icon/slack.svg " alt=" ">
 
-                            </div>
-                            <h3>
-                                Slack
-                            </h3>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 ">
-                        <div class=" text-center ">
-                            <div class="icon ">
-                                <a href="https://www.instagram.com/volkooov99/ ">
-                                    <img src="img/svg_icon/insta.svg " alt=" ">
-                            </div>
-                            <h3>
-                                Instagram
-                            </h3>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 ">
-                        <div class=" text-center ">
-                            <div class="icon ">
-                                <a href="https://vk.com/id657222368">
-                                    <img src="img/svg_icon/vk.svg " alt=" ">
-                            </div>
-                            <h3>
-                                Вконтакте
-                            </h3>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-margin ">
-                        <div class=" text-center ">
-                            <div class="icon ">
-                                <a href="https://github.com/No-simple4">
-                                    <img src="img/svg_icon/github.svg " alt=" ">
-                            </div>
-                            <h3>
-                                GitHub
-                            </h3>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-margin ">
-                        <div class=" text-center ">
-                            <div class="icon ">
-                                <a href="mailto:no-simple@mail.ru">
-                                    <img src="img/svg_icon/mail.svg " alt=" ">
-                            </div>
-                            <h3>
-                                Mail
-                            </h3>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-margin ">
-                        <div class=" text-center ">
-                            <div class="icon ">
-                                <a href="https://hh.ru/resume/04ae88ecff08fb691d0039ed1f316970336631">
-                                    <img src="img/svg_icon/hhru.png " alt=" ">
-                            </div>
-                            <h3>
-                                HeadHunter
-                            </h3>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--contact end-->
-
-        <div class="col-xl-12 ">
-            <p class="copy_right text-center ">
+        <div class="footer_text">
+            <p class="text-center">
                 Copyright &copy;
                 <script>
                     document.write(new Date().getFullYear());
                 </script> VOLKOV-P | Все права защищены
 
+
+
             </p>
         </div>
     </div>
-    <!-- gallery_area end  -->
-
-    <!-- JS here -->
 
     <script src="js/vendor/modernizr-3.5.0.min.js "></script>
     <script src="js/vendor/jquery-1.12.4.min.js "></script>
