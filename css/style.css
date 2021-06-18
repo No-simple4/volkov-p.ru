@@ -17,6 +17,9 @@ body {
     position: relative;
 
 }
+.slider_text a {
+    padding-left: 5px;
+}
 
 .img {
     max-width: 100%;
