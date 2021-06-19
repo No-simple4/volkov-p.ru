@@ -21,22 +21,28 @@ AOS.init({
 });
 
 
-$("#button-about").click(function() {
-  $([document.documentElement, document.body]).animate({
+$("#button-about").click(function(event) {
+  event.preventDefault();
+
+  $([document.documentElement, document.body]).stop().animate({
     scrollTop: $("#scroll-about").offset().top
-  }, 2000);
+  }, 1000);
 });
 
-$("#button-works").click(function() {
-  $([document.documentElement, document.body]).animate({
+$("#button-works").click(function(event) {
+  event.preventDefault();
+
+  $([document.documentElement, document.body]).stop().animate({
     scrollTop: $("#scroll-works").offset().top
-  }, 2000);
+  }, 1000);
 });
 
-$("#button-education").click(function() {
-  $([document.documentElement, document.body]).animate({
+$("#button-education").click(function(event) {
+  event.preventDefault();
+
+  $([document.documentElement, document.body]).stop().animate({
     scrollTop: $("#scroll-education").offset().top
-  }, 2000);
+  }, 1000);
 });
 
 
